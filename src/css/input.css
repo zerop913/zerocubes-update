@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-raleway;
+  }
+}
+
+@layer base {
+  .custom-button {
+    background: #7759f3;
+    box-shadow: 0px 14px 14px rgba(119, 89, 243, 0.15);
+    border-radius: 5px;
+  }
+}
+
+@layer base {
+  .custom-button2 {
+    background: #8e2ac3;
+    box-shadow: 0px 14px 14px rgba(142, 42, 195, 0.15);
+    border-radius: 5px;
+  }
+}

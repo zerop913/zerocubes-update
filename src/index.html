@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zerocubes</title>
+    <link rel="stylesheet" href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="h-[4513px] bg-heroGradient">
+    <section>
+      <!-- Header -->
+      <header
+        class="mx-auto flex max-w-[1251.62px] items-center justify-around pt-[44px] lg:px-5 sm:pt-5"
+      >
+        <!-- Logo -->
+
+        <article class="flex items-center justify-between">
+          <img src="./assets/header/logo.svg" />
+          <p class="text-[28px] font-semibold leading-7 text-violet">
+            ZeroCubes
+          </p>
+        </article>
+
+        <!-- Menu Desktop -->
+
+        <nav class="flex sm:hidden">
+          <ul class="flex items-center gap-[41px]">
+            <li>
+              <a
+                href="#"
+                class="relative text-[16px] font-semibold leading-4 text-violet after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                >Инструкции</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                >Сборка</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <nav
+          id="mobile-menu"
+          class="fixed left-0 top-0 right-0 bottom-0 hidden items-center justify-center bg-heroGradient"
+        >
+          <ul class="flex flex-col items-center gap-10">
+            <li><a href="#" class="text-xl text-white">Главная</a></li>
+            <li><a href="#" class="text-xl text-white">Инструкции</a></li>
+            <li><a href="#" class="text-xl text-white">Сборка</a></li>
+            <li><a href="#" class="text-xl text-white">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Search -->
+
+        <article class="flex items-center gap-[55px] md:hidden">
+          <input
+            type="search"
+            class="rounded-lg border-[1px] border-[#ffffff1f] bg-[#ffffff18] py-[14px] px-4 text-[#D5D4DA]"
+            placeholder="Поиск по сайту"
+          />
+          <button
+            class="absolute ml-[165px] h-10 w-10 rounded-lg bg-violet pl-[12px]"
+          >
+            <img src="./assets/header/search.svg" />
+          </button>
+        </article>
+
+        <!-- Log in -->
+        <article class="flex md:hidden">
+          <button
+            class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
+          >
+            Вход
+          </button>
+        </article>
+
+        <!-- Burger menu -->
+        <button id="burger" class="group relative hidden h-5 w-[30px] sm:block">
+          <span
+            class="absolute top-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+          ></span>
+          <span
+            class="absolute top-1/2 left-0 h-[1px] w-full bg-white transition-opacity group-[.active]:opacity-0"
+          ></span>
+          <span
+            class="absolute bottom-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45"
+          ></span>
+        </button>
+      </header>
+    </section>
+
+    <!-- Section Hero -->
+    <section>
+      <div
+        class="mx-auto mt-20 grid h-screen max-w-[1252px] grid-cols-[60%_40%] place-items-center justify-center lg:px-5 md:grid-cols-1"
+      >
+        <div>
+          <h1
+            class="text-[64px] font-semibold leading-[75px] text-white lg:text-5xl lg:leading-normal md:text-center sm:text-4xl sm:leading-normal"
+          >
+            Сборка Кубика Рубика
+          </h1>
+          <img
+            src="./assets/hero/для начинающих.png"
+            alt="img"
+            class="mt-[22px] leading-[75px] md:mx-auto md:mt-[16px] sm:mx-auto sm:scale-75"
+          />
+          <p
+            class="mt-[17px] text-[18px] text-grey lg:text-[16px] sm:text-center sm:text-[14px]"
+          >
+            Научись собирать самую популярную головоломку в мире менее чем за
+            минуту!
+          </p>
+
+          <div
+            class="flex items-center gap-[37px] pt-[47px] md:grid-cols-2 md:pt-5"
+          >
+            <button
+              class="custom-button py-[17px] px-[61px] text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
+            >
+              Инструкции
+            </button>
+            <button
+              class="custom-button2 py-[17px] px-[86px] text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#aa15fa]"
+            >
+              Сборка
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/hero/maincube.gif" alt="gif" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Устройство кубика -->
+    <section>
+      <div class="mx-auto mt-[120px] h-max max-w-[1252px]">
+        <!-- Заголовок -->
+        <div>
+          <h1 class="text-center text-5xl font-semibold text-white">
+            Устройство Кубика Рубика
+          </h1>
+          <p class="mt-16 text-center text-3xl font-light text-white">
+            Кубик Рубика - это головоломка, которая состоит из 27 маленьких
+            кубиков одинакового размера, которые могут поворачиваться вокруг
+            своей оси. Головоломка разделена на три группы кубиков - центры,
+            ребра и углы.
+          </p>
+        </div>
+        <!-- Центры -->
+        <div class="grid grid-cols-2 pt-16">
+          <div><img src="./assets/device/Центры.png" alt="img" /></div>
+          <div>
+            <h2 class="text-5xl font-semibold text-white">Центры</h2>
+            <p class="pt-[37px] text-4xl font-light text-white">
+              Центры - это кубики, которые расположены в середине каждой грани
+              кубика Рубика. Всего на кубике Рубика шесть центров, которые
+              расположены на шести разных гранях. Центры имеют одинаковый цвет
+              на каждой грани, и эти цвета определяют цвет грани кубика Рубика.
+            </p>
+          </div>
+        </div>
+        <!-- Углы -->
+        <div class="grid grid-cols-2 pt-4">
+          <div><img src="./assets/device/Углы.png" alt="img" /></div>
+          <div>
+            <h2 class="text-5xl font-semibold text-white">Углы</h2>
+            <p class="pt-[37px] text-4xl font-light text-white">
+              Углы - это кубики, которые расположены в углах кубика Рубика.
+              Всего на кубике Рубика восемь углов, и они имеют три цвета на себе
+              - цвет трех граней, которые соединяются в углу. Углы могут
+              поворачиваться вокруг своих осей, которые проходят через центры
+              кубика Рубика.
+            </p>
+          </div>
+        </div>
+        <!-- Ребра -->
+        <div class="grid grid-cols-2 pt-4">
+          <div><img src="./assets/device/Рёбра.png" alt="img" /></div>
+          <div>
+            <h2 class="text-5xl font-semibold text-white">Ребра</h2>
+            <p class="pt-[37px] text-4xl font-light text-white">
+              Ребра - это кубики, которые находятся на границе между двумя
+              гранями кубика Рубика. Всего на кубике Рубика двенадцать ребер, и
+              они имеют два цвета на себе - цвет одной грани и цвет соседней
+              грани. Ребра могут поворачиваться вокруг оси, которая проходит
+              через центры кубика Рубика.
+            </p>
+          </div>
+        </div>
+        <!-- Текст после -->
+        <p class="pt-10 text-center text-3xl font-light text-white">
+          У кубика Рубика 6 сторон и, соответственно, 6 разных цветов. На
+          собранном кубике Рубика цвета расположены всегда одинаковым образом
+          относительно друг друга. В классической расцветке белый всегда
+          напротив желтого, синий напротив зеленого, а красный напротив
+          оранжевого.
+        </p>
+      </div>
+    </section>
+
+    <!-- Язык вращений -->
+    <section>
+      <div class="mx-auto mt-20 h-max max-w-[1049px]">
+        <h1
+          class="text-center text-5xl font-semibold leading-[56px] text-white"
+        >
+          Язык вращений
+        </h1>
+        <div
+          class="mx-auto mt-[58px] grid grid-cols-[40%_60%] place-items-center justify-center"
+        >
+          <div class="space-y-[20px]">
+            <p class="text-[55px] text-white">
+              R -
+              <span class="text-4xl font-light text-white">правая сторона</span>
+            </p>
+            <p class="text-[55px] text-white">
+              L -
+              <span class="text-4xl font-light text-white">левая сторона</span>
+            </p>
+            <p class="text-[55px] text-white">
+              U -
+              <span class="text-4xl font-light text-white"
+                >верхняя сторона</span
+              >
+            </p>
+            <p class="text-[55px] text-white">
+              D -
+              <span class="text-4xl font-light text-white">нижняя сторона</span>
+            </p>
+            <p class="text-[55px] text-white">
+              F -
+              <span class="text-4xl font-light text-white"
+                >лицевая сторона</span
+              >
+            </p>
+            <p class="text-[55px] text-white">
+              B -
+              <span class="text-4xl font-light text-white">задняя сторона</span>
+            </p>
+          </div>
+
+          <div class="ml-[94px]">
+            <p class="text-[55px] font-semibold leading-[65px] text-white">R</p>
+            <p class="mt-[17px] text-2xl leading-[28px] text-white">
+              Просто буква означает, что нужно крутить сторону по часовой
+              стрелке, как если бы мы смотрели на грань в лицо.
+            </p>
+            <p
+              class="mt-[29px] text-[55px] font-semibold leading-[65px] text-white"
+            >
+              R’
+            </p>
+            <p class="mt-[17px] text-2xl leading-[28px] text-white">
+              Если после буквы стоит штрих, нужно крутить сторону против часовой
+              стрелки, как если бы мы смотрели на грань в лицо.
+            </p>
+            <p
+              class="mt-[29px] text-[55px] font-semibold leading-[65px] text-white"
+            >
+              R2
+            </p>
+            <p class="mt-[17px] text-2xl leading-[28px] text-white">
+              Если после буквы стоит 2, нужно крутить эту сторону на 180
+              градусов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Кнопка Инструкции -->
+    <section>
+      <div class="mx-auto mt-[102px] h-max max-w-[397px]">
+        <button
+          class="custom-button py-[25px] px-[127px] text-center text-[24px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
+        >
+          Инструкции
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-[104px] bg-footerGradient">
+      <div class="mx-auto mt-[104px] max-w-[1071px]">
+        <div class="flex justify-between pt-[50px] pb-[50px]">
+          <div class="max-w-[270px]">
+            <img src="./assets/footer/logo.svg" alt="img" />
+            <p class="mt-[31px] text-xl leading-normal text-[#706C83]">
+              Научись собирать самую популярную головоломку в мире менее чем за
+              минуту!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-3">
+            <div>
+              <p class="text-xl font-semibold text-violet">Главная</p>
+              <ul class="mt-3">
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Домашняя</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Устройство</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Язык вращений</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="ml-[60px]">
+              <p class="text-xl font-semibold text-white">Инструкции</p>
+              <ul class="mt-3">
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >3х3</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >2x2</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Pyraminx</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Megaminx</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="ml-[60px]">
+              <p class="text-xl font-semibold text-white">Сборка</p>
+              <ul class="mt-3">
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Сборка онлайн</a
+                  >
+                </li>
+                <li class="mt-7">
+                  <a
+                    href=""
+                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    >Результаты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
