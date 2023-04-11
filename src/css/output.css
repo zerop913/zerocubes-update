@@ -686,6 +686,30 @@ body {
   margin-top: 96px;
 }
 
+.mt-\[24\.13px\] {
+  margin-top: 24.13px;
+}
+
+.mt-\[22\.98px\] {
+  margin-top: 22.98px;
+}
+
+.mt-\[29\.87px\] {
+  margin-top: 29.87px;
+}
+
+.mb-\[28\.73px\] {
+  margin-bottom: 28.73px;
+}
+
+.mb-\[29\.87px\] {
+  margin-bottom: 29.87px;
+}
+
+.mb-\[64\.05px\] {
+  margin-bottom: 64.05px;
+}
+
 .flex {
   display: flex;
 }
@@ -735,6 +759,18 @@ body {
   height: 100vh;
 }
 
+.h-\[415\.95px\] {
+  height: 415.95px;
+}
+
+.h-\[241\.29px\] {
+  height: 241.29px;
+}
+
+.h-\[34\.47px\] {
+  height: 34.47px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -765,6 +801,18 @@ body {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[288\.92px\] {
+  width: 288.92px;
+}
+
+.w-\[246\.12px\] {
+  width: 246.12px;
+}
+
+.w-\[220\.44px\] {
+  width: 220.44px;
 }
 
 .max-w-\[1049px\] {
@@ -819,6 +867,38 @@ body {
   grid-template-columns: 60% 40%;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-\[40\%_30\%_30\%\] {
+  grid-template-columns: 40% 30% 30%;
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-\[40\%_30\%_30\%\] {
+  grid-template-rows: 40% 30% 30%;
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -829,6 +909,10 @@ body {
 
 .place-items-stretch {
   place-items: stretch;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {
@@ -861,6 +945,18 @@ body {
 
 .gap-\[55px\] {
   gap: 55px;
+}
+
+.gap-\[32\.1px\] {
+  gap: 32.1px;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[1px\] {
+  gap: 1px;
 }
 
 .space-y-\[20px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1062,12 +1158,20 @@ body {
   line-height: 1.75rem;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-light {
   font-weight: 300;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-4 {
@@ -1233,6 +1337,10 @@ body {
 }
 
 @media (max-width: 1199.99px) {
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
