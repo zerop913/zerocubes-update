@@ -1932,6 +1932,14 @@ body {
     margin-top: 11rem;
   }
 
+  .lg\:mt-\[30px\] {
+    margin-top: 30px;
+  }
+
+  .lg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2008,6 +2016,14 @@ body {
     margin-top: 16px;
   }
 
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:mt-\[50px\] {
+    margin-top: 50px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2078,6 +2094,11 @@ body {
     padding-bottom: 20px;
   }
 
+  .md\:px-\[11\.75px\] {
+    padding-left: 11.75px;
+    padding-right: 11.75px;
+  }
+
   .md\:pt-5 {
     padding-top: 1.25rem;
   }
@@ -2141,6 +2162,18 @@ body {
 
   .sm\:mt-9 {
     margin-top: 2.25rem;
+  }
+
+  .sm\:mt-\[50px\] {
+    margin-top: 50px;
+  }
+
+  .sm\:mt-\[30px\] {
+    margin-top: 30px;
+  }
+
+  .sm\:mt-\[35px\] {
+    margin-top: 35px;
   }
 
   .sm\:block {
@@ -2275,6 +2308,14 @@ body {
     margin-top: 5rem;
   }
 
+  .xs\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .xs\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .xs\:h-\[300px\] {
     height: 300px;
   }
@@ -2311,6 +2352,16 @@ body {
     padding-bottom: 0.75rem;
   }
 
+  .xs\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .xs\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .xs\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2343,5 +2394,10 @@ body {
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
