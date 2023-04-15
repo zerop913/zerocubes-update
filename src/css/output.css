@@ -1257,6 +1257,10 @@ body {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .leading-4 {
   line-height: 1rem;
 }
@@ -2056,6 +2060,10 @@ body {
 
   .lg\:text-\[35px\] {
     font-size: 35px;
+  }
+
+  .lg\:text-\[36px\] {
+    font-size: 36px;
   }
 
   .lg\:leading-normal {
