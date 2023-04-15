@@ -13,17 +13,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/output.css" />
-    <link rel="stylesheet" href="../css/input.css" />
   </head>
   <body class="h-full bg-heroGradient">
     <!-- Header -->
-    <section>
+
+    <div
+      class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
+    >
       <header
-        class="mx-auto flex max-w-[1440px] items-center justify-around pt-[44px] lg:px-5 sm:pt-5"
+        class="mx-auto flex items-center justify-around pt-[44px] lg:px-5"
       >
         <!-- Logo -->
 
-        <article class="flex items-center justify-between">
+        <article class="flex items-center justify-start">
           <img src="../assets/header/logo.svg" />
           <p class="text-[28px] font-semibold leading-7 text-violet">
             ZeroCubes
@@ -32,8 +34,8 @@
 
         <!-- Menu Desktop -->
 
-        <nav class="flex sm:hidden">
-          <ul class="flex items-center gap-[41px]">
+        <nav class="flex flex-grow justify-center md:justify-end sm:hidden">
+          <ul class="flex items-center gap-[41px] lg:gap-8">
             <li>
               <a
                 href="../index.html"
@@ -62,6 +64,13 @@
                 >Контакты</a
               >
             </li>
+            <li class="hidden md:block">
+              <a
+                href="#"
+                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                >Вход</a
+              >
+            </li>
           </ul>
         </nav>
 
@@ -81,6 +90,7 @@
             </li>
             <li><a href="#" class="text-xl text-white">Сборка</a></li>
             <li><a href="#" class="text-xl text-white">Контакты</a></li>
+            <li><a href="#" class="text-xl text-white">Вход</a></li>
           </ul>
         </nav>
 
@@ -94,7 +104,10 @@
         </article>
 
         <!-- Burger menu -->
-        <button id="burger" class="group relative hidden h-5 w-[30px] sm:block">
+        <button
+          id="burger"
+          class="group relative hidden h-5 w-[30px] sm:block sm:justify-end"
+        >
           <span
             class="absolute top-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
           ></span>
@@ -106,22 +119,40 @@
           ></span>
         </button>
       </header>
-    </section>
+    </div>
 
     <!-- Hero -->
-    <section>
-      <div class="ml-[300px] mt-[230px]">
-        <h1 class="text-[64px] font-semibold leading-[75px] text-white">
+
+    <section
+      class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
+    >
+      <div
+        class="ml-[135px] mt-[230px] lg:ml-28 lg:mt-44 md:ml-20 md:mt-36 sm:mt-24 xs:ml-9"
+      >
+        <h1
+          class="w-max text-[64px] font-semibold leading-[75px] text-white lg:text-5xl sm:text-3xl xs:text-2xl"
+        >
           Сборка белого креста
         </h1>
       </div>
-      <div class="mt-[85px]">
-        <p class="mx-auto w-[1252px] text-[32px] text-white">
+    </section>
+
+    <!-- Text -->
+
+    <div
+      class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
+    >
+      <div class="mx-auto mt-[85px]">
+        <p
+          class="mx-auto text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
           Перед тем, как начать сборку кубика Рубика, надо определиться с
           центром, на который мы будем ориентироваться. Чаще всего - это белый,
           он же и будет использоваться в этой инструкции.
         </p>
-        <p class="mx-auto mt-[37px] w-[1252px] text-[32px] text-white">
+        <p
+          class="mx-auto mt-[37px] text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
           Чтобы собраться белую сторону, нужно для начала собрать белый крест.
           Его сборка происходит путем сопоставления рёбер с белыми наклейками, с
           центрами, которые находятся на среднем слое (красный, синий,
@@ -129,102 +160,198 @@
         </p>
       </div>
 
-      <div class="mt-t64">
-        <div class="custom-rect2 mx-auto h-[125px] w-[1252px]">
-          <p class="py-[20px] text-4xl font-bold text-white">
-            Внимание: на этом этапе работа производится исключительно с рёбрами,
-            угловые элементы пока не трогаем.
-          </p>
-        </div>
+      <div class="custom-rect2 mt-16">
+        <p
+          class="ml-[20px] py-[20px] text-[30px] font-bold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-1 xs:py-1 xs:text-lg"
+        >
+          Внимание: на этом этапе работа производится исключительно с рёбрами,
+          угловые элементы пока не трогаем.
+        </p>
       </div>
-    </section>
+
+      <div class="mx-auto mt-16">
+        <p
+          class="mx-auto text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
+          Для сборки креста, надо отыскать на кубике рёбра с белыми наклейками,
+          и в зависимости от соседней наклейки на этом элементе, подвести её к
+          нужному центру, а затем и к белой стороне.
+        </p>
+        <p
+          class="mx-auto mt-[37px] text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
+          Пример:
+        </p>
+      </div>
+
+      <div class="custom-rect2 mt-16">
+        <p
+          class="ml-[20px] py-[20px] text-[30px] font-bold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-1 xs:py-1 xs:text-lg"
+        >
+          У нас есть БЕЛО-КРАСНОЕ ребро, красную наклейку мы подводим к красному
+          центру, и когда получается два подрят квадратика красного цвета,
+          идущие из центра, мы доворачиваем сторону до белого центра.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="./gifs/white cross/rebro.gif"
+          alt=""
+          class="mx-auto mt-16 items-center"
+        />
+      </div>
+
+      <div class="mx-auto mt-16">
+        <p
+          class="mx-auto text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
+          Так делаем со всеми оставшимися рёбрами. В итоге должен получится
+          белый крест.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="./img/white-cross.png"
+          alt="img"
+          class="mx-auto mt-16 items-center"
+        />
+      </div>
+
+      <div class="mx-auto mt-16">
+        <p
+          class="mx-auto text-[32px] leading-normal text-white lg:text-[28px] sm:text-2xl xs:text-lg"
+        >
+          Подборка распространенных случаев и их решений:
+        </p>
+      </div>
+
+      <div class="mx-auto mt-16 grid grid-cols-2 sm:grid-cols-1">
+        <img
+          src="./gifs/white cross/1.gif"
+          alt=""
+          class="mx-auto mt-16 items-center sm:mt-9"
+        />
+        <img
+          src="./gifs/white cross/2.gif"
+          alt=""
+          class="mx-auto mt-16 items-center sm:mt-9"
+        />
+        <img
+          src="./gifs/white cross/3.gif"
+          alt=""
+          class="mx-auto mt-16 items-center sm:mt-9"
+        />
+        <img
+          src="./gifs/white cross/4.gif"
+          alt=""
+          class="mx-auto mt-16 items-center sm:mt-9"
+        />
+      </div>
+
+      <div class="mx-auto mt-16 ml-auto mr-0 h-max w-max">
+        <p
+          class="custom-button py-[25px] px-[70px] text-center text-[24px] font-semibold text-white transition-colors hover:bg-[#562cfc] md:py-4 md:px-9 md:text-base xs:py-3 xs:px-7 xs:text-xs"
+        >
+          Следующий Этап
+        </p>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="mt-[104px] bg-footerGradient">
-      <div class="mx-auto mt-[104px] max-w-[1071px]">
-        <div class="flex justify-between pt-[50px] pb-[50px]">
+
+    <footer class="mt-16 bg-footerGradient pt-[50px] pb-[50px]">
+      <div class="mx-auto max-w-[1072px] px-5">
+        <div class="flex justify-between md:flex-wrap md:gap-10">
           <div class="max-w-[270px]">
             <img src="../assets/footer/logo.svg" alt="img" />
-            <p class="mt-[31px] text-xl leading-normal text-[#706C83]">
+            <p class="mt-[31px] text-xl text-grey sm:text-base">
               Научись собирать самую популярную головоломку в мире менее чем за
               минуту!
             </p>
           </div>
 
-          <div class="grid grid-cols-3">
+          <div class="grid max-w-[670px] grid-cols-3 gap-[105px] sm:gap-[50px]">
             <div>
-              <p class="text-xl font-semibold text-violet">Главная</p>
-              <ul class="mt-3">
-                <li class="mt-7">
+              <p class="text-xl font-semibold text-violet sm:text-base">
+                Главная
+              </p>
+              <ul class="mt-4 flex flex-col gap-2">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Домашняя</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Устройство</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Язык вращений</a
                   >
                 </li>
               </ul>
             </div>
-            <div class="ml-[60px]">
-              <p class="text-xl font-semibold text-white">Инструкции</p>
-              <ul class="mt-3">
-                <li class="mt-7">
+            <div>
+              <p class="text-xl font-semibold text-white sm:text-base">
+                Инструкции
+              </p>
+              <ul class="mt-4 flex flex-col gap-2">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >3х3</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
-                    >2x2</a
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
+                    >2х2</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
-                    >Pyraminx</a
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
+                    >Piraminx</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Megaminx</a
                   >
                 </li>
               </ul>
             </div>
-            <div class="ml-[60px]">
-              <p class="text-xl font-semibold text-white">Сборка</p>
-              <ul class="mt-3">
-                <li class="mt-7">
+            <div>
+              <p class="text-xl font-semibold text-white sm:text-base">
+                Сборка
+              </p>
+              <ul class="mt-4 flex flex-col gap-2">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Сборка онлайн</a
                   >
                 </li>
-                <li class="mt-7">
+                <li>
                   <a
                     href=""
-                    class="text-xl text-[#706C83] transition-colors hover:text-white"
+                    class="text-xl text-[#706C83] transition-colors hover:text-white sm:text-base"
                     >Результаты</a
                   >
                 </li>
@@ -234,7 +361,6 @@
         </div>
       </div>
     </footer>
-
     <script src="../js/main.js"></script>
   </body>
 </html>
