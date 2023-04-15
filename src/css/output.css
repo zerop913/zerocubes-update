@@ -2332,4 +2332,8 @@ body {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .xs\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
