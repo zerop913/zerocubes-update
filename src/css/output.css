@@ -751,6 +751,10 @@ body {
   margin-right: 20px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -1980,12 +1984,37 @@ body {
     margin-left: 1.25rem;
   }
 
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .lg\:break-all {
+    word-break: break-all;
   }
 
   .lg\:px-5 {
