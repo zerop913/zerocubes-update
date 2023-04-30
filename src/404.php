@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Классический 3х3</title>
+    <title>Zerocubes</title>
+    <link rel="icon" type="image/png" href="assets/3d-cube.ico">
     <link rel="stylesheet" href="
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,76 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body class="bg-heroGradient">
     <!-- Header -->
-
     <div
-<<<<<<< Updated upstream
-      class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
-    >
-      <header
-        class="mx-auto flex items-center justify-around pt-[44px] lg:px-5"
-      >
-        <!-- Logo -->
-
-        <article class="flex items-center justify-start">
-          <img src="../assets/header/logo.svg" />
-          <p class="text-[28px] font-semibold leading-7 text-violet">
-            ZeroCubes
-          </p>
-        </article>
-
-        <!-- Menu Desktop -->
-
-        <nav class="flex flex-grow justify-center md:justify-end sm:hidden">
-          <ul class="flex items-center gap-[41px] lg:gap-8">
-            <li>
-              <a
-                href="../index.html"
-                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
-                >Главная</a
-              >
-            </li>
-            <li>
-              <a
-                href="../instructions.html"
-                class="relative text-[16px] font-semibold leading-4 text-violet after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
-                >Инструкции</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
-                >Сборка</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
-                >Контакты</a
-              >
-            </li>
-            <li class="hidden md:block">
-              <a
-                href="#"
-                class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
-                >Вход</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Menu Mobile -->
-        <nav
-          id="mobile-menu"
-          class="fixed left-0 top-0 right-0 bottom-0 hidden items-center justify-center bg-heroGradient"
-=======
           class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
->>>>>>> Stashed changes
         >
           <header
             class="mx-auto flex items-center justify-around pt-[44px] lg:px-5"
@@ -90,9 +27,9 @@
 
             <article
               class="flex items-center justify-start"
-              onclick="location.href='../index.html'"
+              onclick="location.href='./index.html'"
             >
-              <img src="../assets/header/logo.svg" />
+              <img src="./assets/header/logo.svg" />
               <p class="text-[28px] font-semibold leading-7 text-violet">
                 ZeroCubes
               </p>
@@ -104,21 +41,21 @@
               <ul class="flex items-center gap-[41px] lg:gap-8">
                 <li>
                   <a
-                    href="../index.html"
+                    href="./index.html"
                     class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
                     >Главная</a
                   >
                 </li>
                 <li>
                   <a
-                    href="../instructions.html"
-                    class="relative text-[16px] font-semibold leading-4 text-violet after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                    href="./instructions.html"
+                    class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
                     >Инструкции</a
                   >
                 </li>
                 <li>
                   <a
-                    href="../assembly-online.html"
+                    href="./assembly-online.html"
                     class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
                     >Сборка</a
                   >
@@ -148,20 +85,20 @@
             >
               <ul class="flex flex-col items-center gap-10">
                 <li>
-                  <a href="../index.html" class="text-xl text-white">Главная</a>
+                  <a href="./index.html" class="text-xl text-white">Главная</a>
                 </li>
                 <li>
-                  <a href="../instructions.html" class="text-xl text-white"
+                  <a href="./instructions.html" class="text-xl text-white"
                     >Инструкции</a
                   >
                 </li>
-                <li><a href="../assembly-online.html" class="text-xl text-white">Сборка</a></li>
+                <li><a href="./assembly-online.html" class="text-xl text-white">Сборка</a></li>
                 <li><a href="#" class="text-xl text-white">Контакты</a></li>
                 <?php
                   if (isset($_SESSION['username'])) {
-                    echo '<li><a href="#" class="text-xl text-white">'.$_SESSION['username'].'</a></li>';
+                    echo '<li><a href="login.html" class="text-xl text-white">'.$_SESSION['username'].'</a></li>';
                   } else {
-                    echo '<li><a href="#" class="text-xl text-white">Вход</a></li>';
+                    echo '<li><a href="login.html" class="text-xl text-white">Вход</a></li>';
                   }
                 ?>
               </ul>
@@ -170,9 +107,9 @@
             <!-- Log in -->
             <article class="flex md:hidden">
             <?php if (isset($_SESSION['username'])) { ?>
-              <a href="../index.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"><?php echo $_SESSION['username'] ?></a>
+              <a href="login.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"><?php echo $_SESSION['username'] ?></a>
             <?php } else { ?>
-              <a href="../login.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]">Вход</a>
+              <a href="login.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]">Вход</a>
             <?php } ?>
             </article>
 
@@ -194,96 +131,39 @@
           </header>
     </div>
 
-    <!-- Классический 3х3 -->
+    <!-- Section Hero -->
     <section
       class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
     >
-      <div
-        class="ml-[135px] mt-[230px] lg:ml-28 lg:mt-44 md:ml-20 md:mt-36 sm:mt-24 xs:ml-9"
-      >
-        <h1
-          class="w-max text-[64px] font-semibold leading-[75px] text-white lg:text-5xl sm:text-3xl xs:text-2xl"
-        >
-          Классический 3х3
-        </h1>
+      <div>
+        <div>
+            <img src="./assets/404/Ошибка.png" alt="img" class="hero-image mx-auto mt-14 md:scale-95 sm:scale-75 md:mt-10 sm:mt-5">
+            <p class="mt-14 text-[18px] text-grey lg:text-[16px] text-center sm:text-[14px] md:mt-10 sm:mt-5">
+                Проверьте правильность url-адреса, и фактор существования данной страницы
+            </p>
+        </div>
+        <div>
+
+        </div>
       </div>
     </section>
 
-    <!-- Этапы -->
-    <section
-      class="container mx-auto mt-[75px] px-[94px] lg:px-[47px] md:mt-[50px] md:px-[23.5px] sm:mt-[35px] sm:px-[11.75px]"
-    >
-      <div
-        onclick="location.href='./white-cross.html'"
-        class="custom-rect2 mx-auto transition-colors hover:bg-[#7859f356]"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Сборка белого креста
-        </p>
-      </div>
-      <div
-        onclick="location.href='./bottom-layer.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Расстановка углов (сборка нижнего слоя)
-        </p>
-      </div>
-      <div
-        onclick="location.href='./middle-layer.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Расстановка рёбер (сборка среднего слоя)
-        </p>
-      </div>
-      <div
-        onclick="location.href='./yellow-cross.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Сборка желтого креста
-        </p>
-      </div>
-      <div
-        onclick="location.href='./yellow-side.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Расстановка углов (сборка желтой стороны)
-        </p>
-      </div>
-      <div
-        onclick="location.href='./edges-upper-layer.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Расстановка рёбер на верхнем слое
-        </p>
-      </div>
-      <div
-        onclick="location.href='./corners-upper-layer.html'"
-        class="custom-rect2 mx-auto mt-[35px] transition-colors hover:bg-[#7859f356] lg:mt-[30px] md:mt-5 xs:mt-3"
-      >
-        <p
-          class="ml-[43px] py-[23px] text-[40px] font-semibold text-white lg:ml-4 lg:py-4 lg:text-[28px] md:ml-3 md:py-3 md:text-2xl sm:ml-2 sm:py-2 sm:text-2xl xs:ml-2 xs:py-1 xs:text-sm"
-        >
-          Расстановка углов на верхнем слое
-        </p>
-      </div>
+    <?php
+    if (session_status() == PHP_SESSION_NONE) {
+      session_start();
+    }
+    $_SESSION['last_page'] = basename($_SERVER['HTTP_REFERER']);
+    ?>
+
+    <!-- Кнопка назад -->
+    <section class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px] xs:mt-10">
+        <div class="mx-auto mt-14 h-max max-w-[325px] md:mx-auto md:w-[199px] xs:mt-10 xs:w-[127px] md:mt-10 sm:mt-5">
+            <button onclick="location.href='<?php echo isset($_SESSION['last_page']) ? $_SESSION['last_page'] : './index.html' ?>'" class="custom-button py-[25px] px-[127px] text-center text-[24px] font-semibold text-white transition-colors hover:bg-[#562cfc] md:px-[70px] md:py-[20px] md:text-xl xs:px-[40px] xs:py-3 xs:text-base">
+                Назад
+            </button>
+        </div>
     </section>
+
 
     <!-- Footer -->
 
@@ -291,7 +171,11 @@
       <div class="mx-auto max-w-[1072px] px-5">
         <div class="flex justify-between md:flex-wrap md:gap-10">
           <div class="max-w-[270px]">
-            <img src="../assets/footer/logo.svg" alt="img" />
+            <img
+              src="./assets/footer/logo.svg"
+              onclick="location.href='./index.html'"
+              alt="img"
+            />
             <p class="mt-[31px] text-xl text-grey sm:text-base">
               Научись собирать самую популярную головоломку в мире менее чем за
               минуту!
@@ -328,7 +212,10 @@
               </ul>
             </div>
             <div>
-              <p class="text-xl font-semibold text-violet sm:text-base">
+              <p
+                class="text-xl font-semibold text-white sm:text-base"
+                onclick="location.href='./instructions.html'"
+              >
                 Инструкции
               </p>
               <ul class="mt-4 flex flex-col gap-2">
@@ -388,6 +275,6 @@
       </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

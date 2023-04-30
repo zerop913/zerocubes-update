@@ -17,6 +17,7 @@
   <body class="h-full bg-heroGradient">
     <!-- Header -->
     <div
+<<<<<<< Updated upstream
       class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
     >
       <header
@@ -100,11 +101,16 @@
         <article class="flex md:hidden">
           <button
             class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
+=======
+          class="container mx-auto px-[94px] lg:px-[47px] md:px-[23.5px] sm:px-[11.75px]"
+        >
+          <header
+            class="mx-auto flex items-center justify-around pt-[44px] lg:px-5"
+>>>>>>> Stashed changes
           >
-            Вход
-          </button>
-        </article>
+            <!-- Logo -->
 
+<<<<<<< Updated upstream
         <!-- Burger menu -->
         <button
           id="burger"
@@ -121,6 +127,112 @@
           ></span>
         </button>
       </header>
+=======
+            <article
+              class="flex items-center justify-start"
+              onclick="location.href='./index.html'"
+            >
+              <img src="./assets/header/logo.svg" />
+              <p class="text-[28px] font-semibold leading-7 text-violet">
+                ZeroCubes
+              </p>
+            </article>
+
+            <!-- Menu Desktop -->
+
+            <nav class="flex flex-grow justify-center md:justify-end sm:hidden">
+              <ul class="flex items-center gap-[41px] lg:gap-8">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./instructions.html"
+                    class="relative text-[16px] font-semibold leading-4 text-violet after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                    >Инструкции</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./assembly-online.html"
+                    class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                    >Сборка</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100"
+                    >Контакты</a
+                  >
+                </li>
+                <?php
+                  session_start();
+                  if (isset($_SESSION['username'])) {
+                    echo '<li class="hidden md:block"><a href="#" class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100">'.$_SESSION['username'].'</a></li>';
+                  } else {
+                    echo '<li class="hidden md:block"><a href="#" class="relative text-[16px] font-semibold leading-4 text-white after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:scale-0 after:bg-white after:transition-transform hover:after:scale-100">Вход</a></li>';
+                  }
+                ?>
+              </ul>
+            </nav>
+
+            <!-- Menu Mobile -->
+            <nav
+              id="mobile-menu"
+              class="fixed left-0 top-0 right-0 bottom-0 hidden items-center justify-center bg-heroGradient"
+            >
+              <ul class="flex flex-col items-center gap-10">
+                <li>
+                  <a href="./index.html" class="text-xl text-white">Главная</a>
+                </li>
+                <li>
+                  <a href="./instructions.html" class="text-xl text-white"
+                    >Инструкции</a
+                  >
+                </li>
+                <li><a href="./assembly-online.html" class="text-xl text-white">Сборка</a></li>
+                <li><a href="#" class="text-xl text-white">Контакты</a></li>
+                <?php
+                  if (isset($_SESSION['username'])) {
+                    echo '<li><a href="#" class="text-xl text-white">'.$_SESSION['username'].'</a></li>';
+                  } else {
+                    echo '<li><a href="#" class="text-xl text-white">Вход</a></li>';
+                  }
+                ?>
+              </ul>
+            </nav>
+
+            <!-- Log in -->
+            <article class="flex md:hidden">
+            <?php if (isset($_SESSION['username'])) { ?>
+              <a href="index.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]"><?php echo $_SESSION['username'] ?></a>
+            <?php } else { ?>
+              <a href="login.html" class="custom-button py-[14px] px-12 text-center text-[20px] font-semibold text-white transition-colors hover:bg-[#562cfc]">Вход</a>
+            <?php } ?>
+            </article>
+
+            <!-- Burger menu -->
+            <button
+              id="burger"
+              class="group relative hidden h-5 w-[30px] sm:block sm:justify-end"
+            >
+              <span
+                class="absolute top-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45"
+              ></span>
+              <span
+                class="absolute top-1/2 left-0 h-[1px] w-full bg-white transition-opacity group-[.active]:opacity-0"
+              ></span>
+              <span
+                class="absolute bottom-0 left-0 h-[1px] w-full bg-white transition-transform group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45"
+              ></span>
+            </button>
+          </header>
+>>>>>>> Stashed changes
     </div>
 
     <!-- Инструкции -->
@@ -170,7 +282,7 @@
           <p class="mb-[29.87px] text-center text-2xl font-medium text-white">
             2х2
           </p>
-          <button
+          <button onclick="location.href='./2x2/2x2.html'"
             class="custom-button mx-auto mb-[28.73px] h-[34.47px] w-[220.44px] text-center text-[14px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
           >
             Этапы Сборки
@@ -186,6 +298,7 @@
             Pyraminx
           </p>
           <button
+            onclick="location.href='./404.php'"
             class="custom-button mx-auto mb-[28.73px] h-[34.47px] w-[220.44px] text-center text-[14px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
           >
             Этапы Сборки
@@ -201,6 +314,7 @@
             Megaminx
           </p>
           <button
+            onclick="location.href='./404.php'"
             class="custom-button mx-auto mb-[28.73px] h-[34.47px] w-[220.44px] text-center text-[14px] font-semibold text-white transition-colors hover:bg-[#562cfc]"
           >
             Этапы Сборки
