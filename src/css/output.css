@@ -561,6 +561,13 @@ body {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -579,6 +586,15 @@ body {
 
 .top-1\/2 {
   top: 50%;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-auto {
@@ -603,6 +619,18 @@ body {
   margin-bottom: 85px;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .ml-\[135px\] {
   margin-left: 135px;
 }
@@ -613,10 +641,6 @@ body {
 
 .ml-\[43px\] {
   margin-left: 43px;
-}
-
-.ml-\[94px\] {
-  margin-left: 94px;
 }
 
 .ml-\[94px\] {
@@ -641,34 +665,14 @@ body {
 
 .mt-20 {
   margin-top: 5rem;
-<<<<<<< Updated upstream
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-=======
->>>>>>> Stashed changes
 }
 
 .mt-4 {
   margin-top: 1rem;
 }
 
-<<<<<<< Updated upstream
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-\[102px\] {
   margin-top: 102px;
-}
-
-.mt-\[104px\] {
-  margin-top: 104px;
-=======
-.mt-\[102px\] {
-  margin-top: 102px;
->>>>>>> Stashed changes
 }
 
 .mt-\[11px\] {
@@ -677,13 +681,6 @@ body {
 
 .mt-\[120px\] {
   margin-top: 120px;
-<<<<<<< Updated upstream
-}
-
-.mt-\[128px\] {
-  margin-top: 128px;
-=======
->>>>>>> Stashed changes
 }
 
 .mt-\[17px\] {
@@ -746,25 +743,8 @@ body {
   margin-top: 96px;
 }
 
-<<<<<<< Updated upstream
-.mr-\[20px\] {
-  margin-right: 20px;
-}
-
-.block {
-  display: block;
-=======
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
->>>>>>> Stashed changes
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -812,25 +792,10 @@ body {
   height: max-content;
 }
 
-<<<<<<< Updated upstream
-.h-screen {
-  height: 100vh;
+.max-h-full {
+  max-height: 100%;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-\[1100px\] {
-  width: 1100px;
-}
-
-.w-\[1252px\] {
-  width: 1252px;
-}
-
-=======
->>>>>>> Stashed changes
 .w-\[220\.44px\] {
   width: 220.44px;
 }
@@ -851,6 +816,14 @@ body {
   width: 371px;
 }
 
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[766px\] {
+  width: 766px;
+}
+
 .w-\[820px\] {
   width: 820px;
 }
@@ -864,37 +837,10 @@ body {
   width: max-content;
 }
 
-<<<<<<< Updated upstream
-.w-\[393px\] {
-  width: 393px;
+.w-\[246px\] {
+  width: 246px;
 }
 
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[420px\] {
-  width: 420px;
-}
-
-.w-\[520px\] {
-  width: 520px;
-}
-
-.w-\[470px\] {
-  width: 470px;
-}
-
-.w-\[450px\] {
-  width: 450px;
-}
-
-.max-w-\[1071px\] {
-  max-width: 1071px;
-}
-
-=======
->>>>>>> Stashed changes
 .max-w-\[1072px\] {
   max-width: 1072px;
 }
@@ -913,13 +859,14 @@ body {
 
 .max-w-\[670px\] {
   max-width: 670px;
-<<<<<<< Updated upstream
-=======
 }
 
-.max-w-\[325px\] {
-  max-width: 325px;
->>>>>>> Stashed changes
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-\[766px\] {
+  max-width: 766px;
 }
 
 .flex-grow {
@@ -930,8 +877,20 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.resize-y {
+  resize: vertical;
+}
+
 .resize {
   resize: both;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-2 {
@@ -958,12 +917,16 @@ body {
   grid-template-columns: 60% 40%;
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.grid-cols-\[70_30\] {
+  grid-template-columns: 70 30;
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.grid-cols-\[70\%_30\%\] {
+  grid-template-columns: 70% 30%;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -980,10 +943,6 @@ body {
 
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1022,17 +981,6 @@ body {
   gap: 41px;
 }
 
-<<<<<<< Updated upstream
-.gap-\[55px\] {
-  gap: 55px;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-=======
->>>>>>> Stashed changes
 .space-y-\[20px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(20px * calc(1 - var(--tw-space-y-reverse)));
@@ -1043,9 +991,60 @@ body {
   overflow: hidden;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-violet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 89 243 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-footerGradient {
@@ -1054,6 +1053,10 @@ body {
 
 .bg-heroGradient {
   background-image: linear-gradient(150.57deg, #1E0426 2.97%, #100C3A 25.62%, #130517 51.04%, #050130 72.12%, #0A0426 91.18%);
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-12 {
@@ -1131,6 +1134,16 @@ body {
   padding-bottom: 8px;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-\[50px\] {
   padding-bottom: 50px;
 }
@@ -1139,16 +1152,8 @@ body {
   padding-top: 4rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-\[37px\] {
-  padding-top: 37px;
-}
-
-.pt-16 {
-  padding-top: 4rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .pt-\[37px\] {
@@ -1167,8 +1172,20 @@ body {
   padding-top: 50px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -1269,13 +1286,12 @@ body {
   font-weight: 400;
 }
 
-<<<<<<< Updated upstream
-.font-normal {
-  font-weight: 400;
-=======
 .font-semibold {
   font-weight: 600;
->>>>>>> Stashed changes
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-4 {
@@ -1302,9 +1318,18 @@ body {
   line-height: 1.5;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-\[\#706C83\] {
   --tw-text-opacity: 1;
   color: rgb(112 108 131 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-grey {
@@ -1320,6 +1345,11 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .filter {
@@ -1350,6 +1380,14 @@ body {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.text-violet {
+  cursor: pointer;
 }
 
 /* cyrillic-ext */
@@ -1951,6 +1989,11 @@ body {
   background-color: rgb(170 21 250 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1998,8 +2041,6 @@ body {
 
   .lg\:mt-12 {
     margin-top: 3rem;
-<<<<<<< Updated upstream
-=======
   }
 
   .lg\:mt-44 {
@@ -2024,52 +2065,10 @@ body {
 
   .lg\:flex-wrap {
     flex-wrap: wrap;
->>>>>>> Stashed changes
-  }
-
-  .lg\:mt-44 {
-    margin-top: 11rem;
-  }
-
-  .lg\:mt-\[30px\] {
-    margin-top: 30px;
-  }
-
-  .lg\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
-  .lg\:inline-block {
-    display: inline-block;
-  }
-
-  .lg\:flex {
-    display: flex;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .lg\:gap-8 {
     gap: 2rem;
-  }
-
-  .lg\:break-normal {
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  .lg\:break-all {
-    word-break: break-all;
   }
 
   .lg\:px-5 {
@@ -2152,24 +2151,10 @@ body {
     margin-top: 16px;
   }
 
-<<<<<<< Updated upstream
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .md\:mt-\[50px\] {
     margin-top: 50px;
   }
 
-<<<<<<< Updated upstream
-=======
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
->>>>>>> Stashed changes
   .md\:block {
     display: block;
   }
@@ -2178,54 +2163,20 @@ body {
     display: none;
   }
 
-<<<<<<< Updated upstream
-=======
   .md\:h-10 {
     height: 2.5rem;
   }
 
->>>>>>> Stashed changes
   .md\:w-\[260px\] {
     width: 260px;
   }
 
   .md\:w-\[537px\] {
     width: 537px;
-<<<<<<< Updated upstream
-=======
   }
 
   .md\:w-\[600px\] {
     width: 600px;
-  }
-
-  .md\:w-\[199px\] {
-    width: 199px;
-  }
-
-  .md\:scale-75 {
-    --tw-scale-x: .75;
-    --tw-scale-y: .75;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:scale-90 {
-    --tw-scale-x: .9;
-    --tw-scale-y: .9;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:scale-100 {
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:scale-95 {
-    --tw-scale-x: .95;
-    --tw-scale-y: .95;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
->>>>>>> Stashed changes
   }
 
   .md\:grid-cols-1 {
@@ -2282,11 +2233,6 @@ body {
     padding-bottom: 20px;
   }
 
-  .md\:px-\[11\.75px\] {
-    padding-left: 11.75px;
-    padding-right: 11.75px;
-  }
-
   .md\:pt-5 {
     padding-top: 1.25rem;
   }
@@ -2318,14 +2264,11 @@ body {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-<<<<<<< Updated upstream
-=======
   }
 
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
->>>>>>> Stashed changes
   }
 
   .md\:text-xl {
@@ -2360,25 +2303,8 @@ body {
     margin-top: 2.25rem;
   }
 
-<<<<<<< Updated upstream
-  .sm\:mt-\[50px\] {
-    margin-top: 50px;
-  }
-
-  .sm\:mt-\[30px\] {
-    margin-top: 30px;
-  }
-
   .sm\:mt-\[35px\] {
     margin-top: 35px;
-=======
-  .sm\:mt-\[35px\] {
-    margin-top: 35px;
-  }
-
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
->>>>>>> Stashed changes
   }
 
   .sm\:block {
@@ -2393,8 +2319,6 @@ body {
     height: 400px;
   }
 
-<<<<<<< Updated upstream
-=======
   .sm\:w-64 {
     width: 16rem;
   }
@@ -2403,7 +2327,6 @@ body {
     width: 350px;
   }
 
->>>>>>> Stashed changes
   .sm\:w-\[400px\] {
     width: 400px;
   }
@@ -2460,13 +2383,6 @@ body {
     padding-bottom: 0.75rem;
   }
 
-<<<<<<< Updated upstream
-  .sm\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .sm\:text-center {
     text-align: center;
   }
@@ -2505,14 +2421,11 @@ body {
     line-height: 1.75rem;
   }
 
-<<<<<<< Updated upstream
-=======
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 
->>>>>>> Stashed changes
   .sm\:leading-normal {
     line-height: 1.5;
   }
@@ -2531,13 +2444,10 @@ body {
     margin-left: 2.25rem;
   }
 
-<<<<<<< Updated upstream
-=======
   .xs\:mr-1 {
     margin-right: 0.25rem;
   }
 
->>>>>>> Stashed changes
   .xs\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -2546,21 +2456,8 @@ body {
     margin-top: 5rem;
   }
 
-<<<<<<< Updated upstream
-  .xs\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
   .xs\:mt-3 {
     margin-top: 0.75rem;
-  }
-
-  .xs\:mr-1 {
-    margin-right: 0.25rem;
-=======
-  .xs\:mt-3 {
-    margin-top: 0.75rem;
->>>>>>> Stashed changes
   }
 
   .xs\:h-\[300px\] {
@@ -2579,13 +2476,6 @@ body {
     width: 300px;
   }
 
-<<<<<<< Updated upstream
-=======
-  .xs\:w-\[127px\] {
-    width: 127px;
-  }
-
->>>>>>> Stashed changes
   .xs\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -2606,19 +2496,6 @@ body {
     padding-bottom: 0.75rem;
   }
 
-<<<<<<< Updated upstream
-  .xs\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .xs\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-=======
->>>>>>> Stashed changes
   .xs\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2636,29 +2513,6 @@ body {
   .xs\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-<<<<<<< Updated upstream
-  }
-
-  .xs\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .xs\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xs\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .xs\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-=======
->>>>>>> Stashed changes
   }
 
   .xs\:text-lg {

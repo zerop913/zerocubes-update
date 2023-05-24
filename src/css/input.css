@@ -40,6 +40,10 @@
   }
 }
 
+.text-violet {
+  cursor: pointer;
+}
+
 /* cyrillic-ext */
 @font-face {
   font-family: "Raleway";

@@ -1061,8 +1061,10 @@ class Tween extends Animation {
 
     if (this.yoyo !== null)
       this.updateYoyo(); // Если анимация движется в обратном направлении, то её нужно обновить
-    else if (this.progress <= 1) this.onUpdate(this);
-    // Если анимация еще не закончена, вызываем функцию onUpdate
+    else if (this.progress <= 1)
+      this.onUpdate(
+        this
+      ); // Если анимация еще не закончена, вызываем функцию onUpdate
     // Иначе анимация завершена
     else {
       // Установка прогресса и значения на максимум
@@ -1328,7 +1330,7 @@ class Controls {
       depthWrite: false,
       transparent: true,
       opacity: 0,
-      color: 0x7759f3,
+      color: 0x0033ff,
     });
 
     // Создание контейнера для элементов управления
